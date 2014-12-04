@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="AuditLogDB" assembly="AuditLogDB">
+  <class name="Instance" table="Instance">
+    <id name="ID" type="Int32">
+      <generator class="identity" />
+    </id>
+
+    <property name="VariantInstanceID" type="string" length="255" />
+    <property name="GeneName" type="string" length="255" />
+    <property name="XmlString" type="string" length="1024" />
+    <property name="EncryptedHashCode" type="string" length="255"/>
+    <property name="RecordedDate" type="DateTime" />
+
+    <!--<many-to-one name="Upload" column="UploadID" class="AuditLogDB.Upload" not-null="false"/>-->
+    <property name="UploadID" type="int" />
+  </class>
+</hibernate-mapping>

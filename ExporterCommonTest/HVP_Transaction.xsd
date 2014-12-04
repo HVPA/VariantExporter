@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="HVP_Transaction">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="UploadSystem">
+                    <xs:complexType>
+                        <xs:attribute name="name" type="xs:string" use="required" />
+                        <xs:attribute name="version" type="xs:decimal" use="required" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="VariantInstance" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="OrganisationHashCode" type="xs:string" maxOccurs="1" minOccurs="1" />
+                            <xs:element name="PatientHashCode" type="xs:string" maxOccurs="1" minOccurs="1" />
+                            <xs:element name="GrhaniteHashes">
+                              <xs:complexType>
+                                <xs:sequence>
+                                  <xs:element name="GrhaniteHash" maxOccurs="unbounded">
+                                    <xs:complexType>
+                                      <xs:sequence>
+                                        <xs:element name="HashType" type="xs:string" maxOccurs="1" minOccurs="1" />
+                                        <xs:element name="Hash" type="xs:string" maxOccurs="1" minOccurs="1" />
+                                        <xs:element name="AgrWeight" type="xs:string" maxOccurs="1" minOccurs="1" />
+                                        <xs:element name="GUID" type="xs:string" maxOccurs="1" minOccurs="1" />
+                                      </xs:sequence>
+                                    </xs:complexType>
+                                  </xs:element>
+                                </xs:sequence>
+                              </xs:complexType>
+                            </xs:element>
+                            <xs:element name="GeneName" type="xs:string" maxOccurs="1" minOccurs="1" />
+                            <xs:element name="RefSeqName" type="xs:string" maxOccurs="1" minOccurs="1" />
+                            <xs:element name="RefSeqVer" type="xs:integer" maxOccurs="1" minOccurs="1" />
+                            <xs:element name="Status" type="xs:string" />
+                            <xs:element name="VariantHashCode" type="xs:string" maxOccurs="1" minOccurs="1" />
+                            <xs:element name="VariantClass" type="xs:string" maxOccurs="1" minOccurs="1" />
+                            <xs:element name="cDNA" type="xs:string" />
+                            <xs:element name="mRNA" type="xs:string" />
+                            <xs:element name="Genomic" type="xs:string" />
+                            <xs:element name="Protein" type="xs:string" />
+                            <xs:element name="InstanceDate" type="xs:date" maxOccurs="1" minOccurs="1" />
+                            <xs:element name="Pathogenicity" type="xs:integer" maxOccurs="1" minOccurs="1" />
+                            <xs:element name="Gender" type="xs:string" maxOccurs="1" />
+                            <xs:element name="PatientAge" type="xs:integer" maxOccurs="1" />
+                            <xs:element name="TestDateTime" type="xs:dateTime" maxOccurs="1" minOccurs="1" />
+                            <xs:element name="TestMethod" type="xs:integer" maxOccurs="1" />
+                            <xs:element name="SampleTissue" type="xs:integer" maxOccurs="1" />
+                            <xs:element name="SampleSource" type="xs:integer" maxOccurs="1" />
+                            <xs:element name="Justification" type="xs:string" maxOccurs="1" />
+                            <xs:element name="TestingReason" type="xs:string" maxOccurs="1" />
+                            <xs:element name="DiseaseTested" type="xs:string" maxOccurs="1" />
+                            <xs:element name="PubMed" type="xs:string" maxOccurs="1" />
+                            <xs:element name="RecordedInDatabase" type="xs:boolean" maxOccurs="1" />
+                            <xs:element name="SampleStored" type="xs:boolean" maxOccurs="1" />
+                            <xs:element name="PedigreeAvailable" type="xs:boolean" maxOccurs="1" />
+                            <xs:element name="VariantSegregatesWithDisease" type="xs:boolean" maxOccurs="1" />
+                            <xs:element name="HistologyStored" type="xs:boolean"  />
+                            <xs:element name="RetainedInUploadSystem" type="xs:boolean" maxOccurs="1" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="version" type="xs:decimal" use="required" />
+            <xs:attribute name="dateCreated" type="xs:date" use="required" />
+            <xs:attribute name="destination" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HVP_Transaction version="1.0" dateCreated="2011-04-14-15:54" destination="https://portal.hvpaustralia.org.au:1234/upload">
+    <UploadSystem name="MAWSON" version="1.0" />
+    <VariantInstance>
+        <OrganisationHashCode>XYZ123</OrganisationHashCode>
+        
+        <PatientHashCode>XYZ123</PatientHashCode>
+        <GrhaniteHashes>
+          <GrhaniteHash>
+            <HashType>1020</HashType>
+            <Hash>CyJNKz4hBTwENh4ACSI0FlMTDzcCIzcjFAoUME0nEVdSASAUIjEqADY3AAs+LgsMPAAsCQsIMQw+Ki1NJVUiJSstFD4HJDQnN01WHwUnDwsvMSBNJxVTEDQ1IwU2ERMHSRIcSRE0Ey0eLF5b</Hash>
+            <ArgWeight>19.70</ArgWeight>
+            <GUID>B4B147BC522828731F1A016BFA72C073</GUID>
+          </GrhaniteHash>
+          <GrhaniteHash>
+            <HashType>2210</HashType>
+            <Hash>JSIPFRBQLjcoEjAtUFcnAlUwX1USCzw1AyhVXhIUDVQ2KwFJAisJKwMAST8TMzdQEBILJy8kJDRfMwNJPFUsKyATJSdeLzUKLworNRYkTRcePBIiIgsKKlcCEjQKNS8tDzclVi5UJVYnHDdb</Hash>
+            <AgrWeight>14.71</AgrWeight>
+            <GUID>96A3BE3CF272E017046D1B2674A52BD3</GUID>
+          </GrhaniteHash>
+        </GrhaniteHashes>
+      
+        <GeneName>BRCA1</GeneName>
+        <RefSeqName>NM01721</RefSeqName>
+        <RefSeqVer>1</RefSeqVer>
+
+        <Status>New</Status>
+        <VariantHashCode>XYZ123</VariantHashCode>
+        <VariantClass>cDNA</VariantClass>
+        <cDNA>c.1G&gt;T</cDNA>
+        <mRNA>r.1G&gt;U</mRNA>
+        <Genomic>g.100G&gt;T</Genomic>
+        <Protein>p.33Ser&gt;Cys</Protein>
+        <InstanceDate>2011-03-01-12:00</InstanceDate>
+        <Pathogenicity>1</Pathogenicity>
+
+        <Gender>Male</Gender>
+        <PatientAge>36</PatientAge>
+        <TestDateTime>2011-05-01-14:30</TestDateTime>
+        <TestMethod>1</TestMethod>
+        <SampleTissue>1</SampleTissue>
+        <SampleSource>1</SampleSource>
+        <Justification>This is a justification</Justification>
+        <TestingReason>Reason for testing this patient</TestingReason>
+        <PubMed>1234ABC</PubMed>
+        <RecordedInDatabase>true</RecordedInDatabase>
+        <SampleStored>true</SampleStored>
+        <PedigreeAvailable>false</PedigreeAvailable>
+        <VariantSegregatesWithDisease>true</VariantSegregatesWithDisease>
+        <HistologyStored>false</HistologyStored>
+
+        <RetainedInUploadSystem>true</RetainedInUploadSystem>
+    </VariantInstance>
+    <VariantInstance>
+        <OrganisationHashCode>XYZ456</OrganisationHashCode>
+
+        <PatientHashCode>XYZ123</PatientHashCode>
+        <GrhaniteHashes>
+          <GrhaniteHash>
+            <HashType>1020</HashType>
+            <Hash>CyJNKz4hBTwENh4ACSI0FlMTDzcCIzcjFAoUME0nEVdSASAUIjEqADY3AAs+LgsMPAAsCQsIMQw+Ki1NJVUiJSstFD4HJDQnN01WHwUnDwsvMSBNJxVTEDQ1IwU2ERMHSRIcSRE0Ey0eLF5b</Hash>
+            <AgrWeight>19.70</AgrWeight>
+            <GUID>B4B147BC522828731F1A016BFA72C073</GUID>
+          </GrhaniteHash>
+          <GrhaniteHash>
+            <HashType>2210</HashType>
+            <Hash>JSIPFRBQLjcoEjAtUFcnAlUwX1USCzw1AyhVXhIUDVQ2KwFJAisJKwMAST8TMzdQEBILJy8kJDRfMwNJPFUsKyATJSdeLzUKLworNRYkTRcePBIiIgsKKlcCEjQKNS8tDzclVi5UJVYnHDdb</Hash>
+            <ArgWeight>14.71</ArgWeight>
+            <GUID>96A3BE3CF272E017046D1B2674A52BD3</GUID>
+          </GrhaniteHash>
+        </GrhaniteHashes>
+      
+        <GeneName>BRCA1</GeneName>
+        <RefSeqName>NM01721</RefSeqName>
+        <RefSeqVer>1</RefSeqVer>
+
+        <Status>New</Status>
+        <VariantHashCode>XYZ456</VariantHashCode>
+        <VariantClass>cDNA</VariantClass>
+        <cDNA>c.1G&gt;T</cDNA>
+        <mRNA>r.1G&gt;U</mRNA>
+        <Genomic>g.100G&gt;T</Genomic>
+        <Protein>p.33Ser&gt;Cys</Protein>
+        <InstanceDate>2011-03-01-12:00</InstanceDate>
+        <Pathogenicity>1</Pathogenicity>
+
+        <Gender>Male</Gender>
+        <PatientAge>36</PatientAge>
+        <TestDateTime>2011-05-01-14:30</TestDateTime>  
+        <TestMethod>1</TestMethod>
+        <SampleTissue>1</SampleTissue>
+        <SampleSource>1</SampleSource>
+        <Justification>This is a justification</Justification>
+        <TestingReason>Reason for testing this patient</TestingReason>
+        <PubMed>1234ABC</PubMed>
+        <RecordedInDatabase>true</RecordedInDatabase>
+        <SampleStored>true</SampleStored>
+        <PedigreeAvailable>false</PedigreeAvailable>
+        <VariantSegregatesWithDisease>true</VariantSegregatesWithDisease>
+        <HistologyStored>false</HistologyStored>
+    </VariantInstance>
+</HVP_Transaction>
+               

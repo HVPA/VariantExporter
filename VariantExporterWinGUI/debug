@@ -1,0 +1,3 @@
+Keep this file when developing VS project, it will read all writable files such as AuditLogDB, Configuration.xml, log.txt and .private keys from the application root directory.
+
+In release mode, do not deploy with this file as all writable files will be in the Users/<username>/AppData/Local/VariantExporter directory.

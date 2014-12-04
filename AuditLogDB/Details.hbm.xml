@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="AuditLogDB" assembly="AuditLogDB">
+  <class name="Details" table="Details">
+    <id name="ID" type="Int32">
+      <generator class="identity" />
+    </id>
+
+    <property name="CheckSum" type="string" length="1024" not-null="false"/>
+    <property name="Status" type="string" length="255" not-null="false"/>
+    
+    <many-to-one name="Instance" column="InstanceID" class="AuditLogDB.Instance" not-null="false"/>
+    <!--<many-to-one name="HVPTransaction" column="TransactionID" class="AuditLogDB.HVPTransaction" not-null="false"/>-->
+    <property name="TransactionID" type="int" />
+  </class>
+</hibernate-mapping>
