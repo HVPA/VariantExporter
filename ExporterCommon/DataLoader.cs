@@ -40,8 +40,8 @@ namespace ExporterCommon
             RestRequest request = new RestRequest(RestAPI.API + "{model}/", restMeth);
             request.AddParameter("model", model, ParameterType.UrlSegment);
             request.RequestFormat = DataFormat.Json;
-            request.AddParameter("username", "siteconf");
-            request.AddParameter("api_key", "3020577c5bd111b889bb5cdd0cda80aee376fd2c");
+            request.AddParameter("username", RestAPI.API_USER);
+            request.AddParameter("api_key", RestAPI.API_HASH);
 
             return request;
         }

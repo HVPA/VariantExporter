@@ -1557,7 +1557,7 @@ namespace VariantExporterWinGUI
                     List<string> validFiles = new List<string>();
                     foreach (string file in files)
                     {
-                        if (!file.Contains("~$"))
+                        if (!file.Contains("~$") && !file.Contains(".DS_Store")) // Also ignore files starting with .
                         {
                             validFiles.Add(file);
                         }
@@ -1576,7 +1576,7 @@ namespace VariantExporterWinGUI
                                 "Multiple files detected in source directory", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }
 
-                        path = files[0];
+                        path = validFiles[0];
                     }
                 }
                 else
@@ -1778,7 +1778,7 @@ namespace VariantExporterWinGUI
             {
                 string liveResult = TestServerEncryption(conf.ServerAddress, "Live Server");
                 string testResult = TestServerEncryption(conf.TestServerAddress, "Test Server");
-
+                
                 if (liveResult == "Test successful" && testResult == "Test successful")
                 {
                     MessageBox.Show("Live and Test server connections was successful!", "Test Success!",
